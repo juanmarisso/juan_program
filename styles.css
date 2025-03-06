@@ -9,9 +9,12 @@ body{
     margin: 0 auto;  
 }
 
-
-body{
-    background-color: rgb(159, 133, 101);
+.card{
+    background-color: rgb(126, 117, 117);
+    border-radius: 0,5rem;
 }
-
-
+.buttonbuy{
+    border: none;
+    background-color: rgb(236, 226, 226);
+    padding: 0.4% 1rem;
+}
