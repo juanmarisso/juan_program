@@ -1,13 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>GIN RADA 45</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Pagina oficial de instagram</h1>
-    <link rel="stylesheet" href="">
     
-</body>
-</html>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">GIN RADA 45</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./gin.html">gin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="contacto1" class="container my-5">
+        <h2 class="textocontacto1">Contacto</h2>
+        <p class="textocontacto2">¿Tienes preguntas o comentarios? ¡Estamos para ayudarte!</p>
+    
+        <div class="row">
+           
+            <div class="contacto2">
+                <form action="enviar-mensaje.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre" class="formadelabio">Nombre</label>
+                        <input type="text" class="controldeforma" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="formadelabio">Correo Electrónico</label>
+                        <input type="email" class="controldeforma" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="formadelabio">Mensaje</label>
+                        <textarea class="controldeforma" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btnnegro">Enviar Mensaje</button>
+                </form>
+            </div>
+    
+            
+            <div class="textocontacto2">
+                <h4>Visítanos:</h4>
+                <p>Gin Rada 45</p>
+                <p>Dirección: Calle Ficticia 123, Rada Tilly, Patagonia</p>
+                <p>Teléfono: +54 2974769181</p>
+                <p>Email: contacto@ginrada45.com</p>
+            </div>
+        </div>
+    </section>
+</body> 
+</html>  
