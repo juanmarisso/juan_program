@@ -1,5 +1,40 @@
-body {
+@media (max-width: 768px) {
+  .textoservicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .imagenservicios img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .encabezadoytexto {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .textoprimero {
+    font-size: 2rem;
+  }
+  .textoprimero1 {
+    font-size: 1.2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .puntosservicios {
+    font-size: 1.2rem;
+  }
+}
+html, body {
   background-color: rgb(159, 133, 101);
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 100%;
 }
 
 .texto1html {
@@ -21,6 +56,18 @@ body {
 .card {
   background-color: rgb(126, 117, 117);
   border-radius: 0, 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 350px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .buttonbuy {
@@ -32,6 +79,7 @@ body {
 
 .textoservicios {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 50px;
   max-width: 1200px;
@@ -41,67 +89,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-  .textoservicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .imagenservicios img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-  }
-}
-.encabezadoytexto {
-  max-width: 90%;
-}
-
-@media (max-width: 480px) {
-  .encabezadoytexto {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-}
-.textoprimero {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  font-weight: bold;
-}
-
-.textoprimero1 {
-  font-size: 1.4rem;
-  color: #01070c;
-  border-radius: 10px;
-  font-weight: bold;
-}
-
-.lead {
-  font-size: 1.1rem;
-}
-
-.puntosservicios {
-  font-size: 1.4rem;
-  color: #01070c;
-  font-weight: bold;
-}
-
-@media (max-width: 480px) {
-  .textoprimero {
-    font-size: 2rem;
-  }
-  .textoprimero1 {
-    font-size: 1.2rem;
-  }
-  .lead {
-    font-size: 1rem;
-  }
-  .puntosservicios {
-    font-size: 1.2rem;
-  }
-}
 .buttonbuys {
   border: none;
   background-color: rgb(236, 226, 226);
@@ -185,17 +172,8 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-@media (min-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 .galeria .bloque {
+  width: 70%;
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
@@ -206,7 +184,7 @@ body {
   transform: scale(1.05);
 }
 .galeria .bloque img {
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
 }
 .galeria .bloque h3 {
@@ -229,7 +207,15 @@ body {
   transition: background 0.3s ease-in-out;
 }
 .galeria .bloque button:hover {
-  background-color: black;
+  color: #2c3e50;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(19, 3, 3);
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="servicios en pagina de bebidas, gin artesanal, gin patagonico">
-    <title>GIN RADA 45</title>
-    
+    <meta name="keywords" content="comprar gin rada, gin artesanal, carrito de bebidas">
+    <title>Carrito de Compras - GIN RADA 45</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">GIN RADA 45</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -30,32 +26,35 @@
             </div>
         </div>
     </nav>
-    <section class="container my-5">
-        <div class="textoservicios">
-            <div class="imagenservicios">
-                <img src="./imagenes/images.jpeg" class="imagens" alt="Gin Rada 45">
-            </div>
-            <div class="encabezadoytexto">
-                <h2 class="textoprimero">Cata de Gin Artesanal</h2>
-                <p class="textoprimero1">
-                    Descubre los sabores únicos de nuestro Gin Rada 45 con una experiencia de cata guiada.
-                    Degusta nuestras variedades con botánicos seleccionados de la Patagonia y aprende sobre su proceso de elaboración.
-                </p>
-                <ul class="puntosservicios">
-                    <li>Incluye 4 variedades de gin</li>
-                    <li>Maridaje con frutas y especias</li>
-                    <li>Guía experta en destilados</li>
-                </ul>
-                <a href="./contacto.html" class="buttonbuys">Reservar Ahora</a>
-            </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Carrito de Compras</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-items">
+                </tbody>
+            </table>
         </div>
-    </section>
-     
+        <div class="text-end">
+            <h4>Total: $<span id="total-carrito">0.00</span></h4>
+            <button class="btn btn-success mt-3">Finalizar Compra</button>
+        </div>
+    </div>  
+
     <footer class="pequeño-texto-final">
         <p>&copy; 2025 gin rada 45. Todos los derechos reservados.</p>
     </footer>
 
-
+    <script src="./js/carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
